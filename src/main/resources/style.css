@@ -1,0 +1,58 @@
+:root {
+    /* Tema claro */
+    --bg-color-light: #ffffff;
+    --text-color-light: #000000;
+    --button-bg-light: #3498db;
+    --button-text-light: #ffffff;
+
+    /* Tema escuro */
+    --bg-color-dark: #2c3e50;
+    --text-color-dark: #ecf0f1;
+    --button-bg-dark: #2980b9;
+    --button-text-dark: #ffffff;
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-theme {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-theme {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+button {
+    background-color: var(--button-bg-light);
+    color: var(--button-text-light);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    background-color: var(--button-bg-dark);
+    color: var(--button-text-dark);
+}
+
+button.light-theme {
+    background-color: var(--button-bg-light);
+    color: var(--button-text-light);
+}
+
+button.dark-theme {
+    background-color: var(--button-bg-dark);
+    color: var(--button-text-dark);
+}
